@@ -1,0 +1,67 @@
+<!--
+Evan Chou 
+COEN163 Lab 4
+-->
+
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="shop&flowers.css">
+    <title>Coen163 Lab 4</title>
+</head>
+
+<body>
+    <header>
+        <img id="TopSymbolLeft" src="Assets/BeasAssets/Homepagelogo.png" alt="Top Symbol Left">
+        <img id="TopSymbolRight" src="Assets/homepageImages/cart.png" alt="Top Symbol Right">
+    </header>
+
+    <nav class="navigationbar">
+        <a href="index.html">Home</a> |
+        <a class="mainbutton" href="shop.html">Shop</a> |
+        <a href="#supplies">Supplies</a> |
+        <a href="#gardeningtips/plantinginstructions">Gardening Tips & Planting Instructions</a> |
+        <a href="#about">About</a> |
+        <a href="#contactus">Contact Us</a> |
+        <a href="http://mgsantaclara.ucanr.edu/">UCMG Main Page</a>
+    </nav>
+
+    <div class="row">
+        <section class="column">
+            <h1>TREES</h1>
+            <img id="trees" src="Assets/shop/trees.jpeg" alt="Photo 1">
+            <p id="paragraph">Woody plants that regularly renew its growth. Most plants classified as trees have a single self-supporting trunk containing woody tissues and in most species, the trunk produces branches.</p>
+            <button id="button1" type="button">Browse Trees</button>
+        </section>
+
+        <section class="column">
+            <h1>FLOWERS</h1>
+            <img id="flowers" src="Assets/shop/flowers.jpg" alt="Photo 2">
+            <p id="paragraph">The seed-bearing part of a plant, consisting of reproductive organs (stamens and carpels) that are typically surrounded by a brightly colored corolla (petals) and a green calyx (sepals).</p>
+            <button id="button2" type="button">Browse Flowers</button>
+        </section>
+
+        <section class="column">
+            <h1>VEGETABLES</h1>
+            <img id="vegetables" src="Assets/shop/vegetables.jpg" alt="Photo 3">
+            <p id="paragraph">A kind of plant life or plant product referring to the fresh edible portions of certain herbaceous plants. These plant parts are either eaten fresh or prepared in a number of ways, usually in a dish</p>
+            <button id="button3" type="button">Browse Vegetables</button>
+        </section>
+
+        <script type="text/javascript">
+            document.getElementById("button2").onclick = function() {
+                location.href = "flowers.html";
+            };
+        </script>
+    </div>
+
+    <footer>
+        <a href="#support">Support</a> |
+        <a href="#privacy">Privacy</a>
+    </footer>
+
+</body>
+
+</html>

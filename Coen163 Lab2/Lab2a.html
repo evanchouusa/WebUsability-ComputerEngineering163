@@ -1,0 +1,114 @@
+<!--
+Evan Chou 
+COEN163 Lab2a
+-->
+
+<!DOCTYPE html>
+<html>
+
+<!--HTML head element-->
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="Lab2a.css">
+    <script async src='Lab2a.js'></script>
+    <!--HTML title element-->
+    <title>Coen163 Lab 2a</title>
+</head>
+
+<!--HTML body element-->
+
+<body>
+
+    <div id="mainpage">
+        <header>
+            <div class="mainformat">
+                <div class="mainlogo">
+                    <img id="TopSymbol" src="images/Logo.png" alt="Top Symbol">
+                </div>
+                <div class="mainbutton">
+                    <img id="Button1" onclick="openNav()" src="Assets/Button-01.png" alt="Navigation Bar">
+                </div>
+            </div>
+        </header>
+
+        <!--HTML5 nav element-->
+        <nav class="navigationbar">
+            <a href="#home">HOME</a>
+            <a href="#about">ABOUT</a>
+            <a href="#work">WORK</a>
+            <a href="#news">NEWS</a>
+        </nav>
+
+        <div class="mainformat" id="image1">
+            <img id="photo1" src="images/Photo-01.jpg" alt="Photo 1">
+        </div>
+
+        <div class="mainformat">
+            <!--HTML5 section element-->
+            <div class="left">
+                <section class="column1">
+                    <div class="picture">
+                        <img id="bottomleft" src="images/Photo-02.jpg" alt="Photo 2">
+                    </div>
+                    <div class="column2">
+                        <!--HTML h1 element-->
+                        <h1>Title Head</h1>
+                        <p id="paragraphleft">Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis
+                            nisl ut aliquip ex ea commodo consequat, duis autem vel.</p>
+                    </div>
+                </section>
+            </div>
+
+
+            <!--HTML5 section element-->
+            <div class="center">
+                <section class="column1">
+                    <div class="picture">
+                        <img id="bottommiddle" src="images/Photo-03.jpg" alt="Photo 3">
+                    </div>
+                    <div class="column2">
+                        <!--HTML h1 element-->
+                        <h1>Title Head</h1>
+                        <p id="paragraphmiddle">Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis
+                            nisl ut aliquip ex ea commodo consequat, duis autem vel.</p>
+                    </div>
+                </section>
+            </div>
+
+
+            <div class="right">
+                <!--HTML5 aside element-->
+                <aside id="sidebar">
+                    <!--HTML h1 element-->
+                    <h1 style="text-align:center">Side Bar</h1>
+                    <p id="sideparagraph1">Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis
+                        nisl ut aliquip ex ea commodo consequat, duis autem vel.Lorem ipsum dolor sit amet.
+                        <p>
+                            <p id="sideparagraph2">Lorem ipsumonsectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip
+                                ex ea commodo consequat, duis autem.</p>
+                </aside>
+            </div>
+        </div>
+
+        <!--HTML5 footer element, using span to make footer disappear when on mobile device-->
+        <footer>
+            <a href="#home">HOME</a> <span>|</span>
+            <a href="#about">ABOUT</a> <span>|</span>
+            <a href="#work">WORK</a> <span>|</span>
+            <a href="#news">NEWS</a>
+        </footer>
+    </div>
+
+    <div class="mobiledevicenav">
+        <img id="Button2" onclick="closeNav()" src="Assets/Button-02.png" alt="Mobile Navigation Bar">
+        <nav class="mobilenavigationbar" id="rightsidenav">
+            <a href="#home">HOME</a>
+            <a href="#about">ABOUT</a>
+            <a href="#work">WORK</a>
+            <a href="#news">NEWS</a>
+        </nav>
+    </div>
+</body>
+
+</html>

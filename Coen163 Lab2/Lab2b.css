@@ -1,0 +1,284 @@
+/*  
+Evan Chou
+COEN163 Lab2b
+CSS styles
+*/
+
+body {
+    margin: 0px;
+    font-family: Arial;
+}
+
+#TopSymbol {
+    width: 250px;
+    height: auto;
+    padding-left: 95px;
+}
+
+.list {
+    margin: 0 auto;
+    display: table;
+}
+
+.navigationbar {
+    padding: 12px;
+    background-color: black;
+    overflow: hidden;
+}
+
+.navigationbar a {
+    color: #ffffff;
+    text-align: center;
+    width: 100%;
+    margin-top: 8px;
+    margin-bottom: 8px;
+    margin-left: 25px;
+    text-decoration: none;
+    font-size: 15px;
+    padding: 8px;
+}
+
+.navigationbar a:hover {
+    color: #d1de44;
+}
+
+.logo {
+    display: none;
+}
+
+#mainformat {
+    display: block;
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.image1 {
+    display: block;
+    text-align: center;
+    height: auto;
+    background-color: darkgrey;
+}
+
+#photo1 {
+    margin-top: 30px;
+    margin-bottom: 30px;
+    width: 87%;
+    position: relative;
+    top: 10%;
+    border: 1px solid white;
+}
+
+.mainformat {
+    display: block;
+    float: left;
+    margin-left: 6%;
+    margin-top: 20px;
+    width: 25%;
+    height: 387px;
+    overflow: auto;
+}
+
+#bottom {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+    border: 2px solid white;
+}
+
+.column {
+    background-color: #e7e6e4;
+    display: block;
+    float: left;
+    margin-left: 6%;
+    margin-top: 20px;
+    padding-bottom: 30px;
+    margin-bottom: 30px;
+    width: 25%;
+    height: 350px;
+    overflow: auto;
+}
+
+.sidebar {
+    height: 105%;
+    padding-bottom: 15px;
+}
+
+#paragraph {
+    text-align: left;
+    font-size: 14px;
+    margin-top: 0px;
+    margin-bottom: 5px;
+    padding-bottom: 5px;
+    line-height: normal;
+}
+
+#sideparagraph1 {
+    padding-left: 16px;
+    padding-right: 16px;
+    padding-top: 2px;
+    padding-bottom: 10px;
+}
+
+#sideparagraph2 {
+    padding-left: 16px;
+    padding-right: 16px;
+    padding-bottom: 20px;
+    padding-top: 10px;
+}
+
+.footernav {
+    margin-top: 0;
+    background-color: black;
+    overflow: hidden;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+    margin-right: 0;
+    padding-top: 0;
+}
+
+#home {
+    padding-left: 600px;
+}
+
+.footernav a {
+    float: left;
+    display: block;
+    color: gray;
+    text-align: center;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    padding-left: 8px;
+    padding-right: 8px;
+    font-size: 12px;
+    text-decoration: none;
+}
+
+.disabled {
+    color: gray;
+    pointer-events: none;
+}
+
+.footernav a:hover {
+    color: #D1DE44;
+}
+
+#footerText {
+    color: #ffffff;
+}
+
+@media screen and (max-width: 600px) {
+    .navigationbar a {
+        display: none;
+        font-size: 20px;
+        border-top: 1px solid #ffffff;
+        padding-left: 5px;
+        width: 300px;
+        text-indent: 42%;
+    }
+    .navigationbar a:last-child {
+        border-bottom: 1px solid #ffffff;
+    }
+    .logo {
+        margin-right: 15%;
+        margin-top: 32px;
+        float: right;
+        display: block;
+    }
+    .navigationbar {
+        padding: 2px;
+        background-color: #000000;
+        overflow: hidden;
+    }
+    .mainformat {
+        display: block;
+        float: left;
+        margin-left: 6%;
+        margin-top: 20px;
+        width: 85%;
+        height: 200px;
+        overflow: auto;
+    }
+    #paragraph {
+        float: none;
+        height: inherit;
+        overflow: auto;
+        margin-right: 10px;
+    }
+    #bottom {
+        display: flex;
+        float: right;
+        position: relative;
+        margin-left: 15px;
+        margin-right: auto;
+        width: 60%;
+        height: 100%;
+        border: 2px solid white;
+    }
+    .column {
+        background-color: #e7e6e4;
+        display: inline;
+        float: left;
+        margin-left: 6%;
+        margin-top: 20px;
+        padding-bottom: 30px;
+        margin-bottom: 10px;
+        width: 85%;
+        height: 200px;
+    }
+    .sidebar {
+        padding-bottom: 15px;
+        overflow: scroll;
+    }
+    .navigationbar.responsive {
+        position: relative;
+    }
+    .navigationbar.responsive a.logo {
+        position: absolute;
+        right: 0;
+        top: 0;
+    }
+    .navigationbar.responsive a {
+        float: none;
+        display: block;
+        text-align: left;
+        margin-left: -5px;
+    }
+    .footernav {
+        margin-top: 0;
+        background-color: black;
+        position: relative;
+        bottom: 0;
+        width: 100%;
+        overflow: hidden;
+        margin-right: 0;
+        padding-top: 0;
+    }
+    .footernav a {
+        float: left;
+        display: block;
+        color: gray;
+        text-align: center;
+        padding-top: 30px;
+        padding-bottom: 30px;
+        padding-left: 3px;
+        padding-right: 8px;
+        font-size: 12px;
+        text-decoration: none;
+    }
+    .center {
+        padding-left: 160px;
+    }
+    .disabled {
+        color: gray;
+        pointer-events: none;
+    }
+    .footernav a:hover {
+        color: #D1DE44;
+    }
+    #footerText {
+        color: #ffffff;
+    }
+}

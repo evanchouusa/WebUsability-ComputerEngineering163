@@ -1,0 +1,133 @@
+/*  
+Evan Chou
+COEN161 Lab1
+CSS styles
+*/
+
+header {
+    padding-left: 50px;
+}
+
+body {
+    font-family: arial;
+}
+
+h1 {
+    margin: 12px 0px 0px;
+}
+
+p {
+    margin: 0px;
+}
+
+#TopSymbol {
+    width: 250px;
+    height: auto;
+}
+
+.navigationbar {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: black;
+    text-align: center;
+}
+
+
+/*a is HTML tag for links*/
+
+.navigationbar a {
+    display: inline-block;
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    padding: 14px 16px;
+}
+
+a:hover {
+    /*When mouse hovers over link, the color will change to green (d1de44)*/
+    color: #d1de44;
+}
+
+#image1 {
+    padding-top: 25px;
+    padding-bottom: 25px;
+    padding-left: 50px;
+    padding-right: 50px;
+    background-color: darkgrey;
+}
+
+#photo1 {
+    max-width: 100%;
+    max-height: 100%;
+    border: 1px solid white;
+}
+
+.row {
+    display: flex;
+    flex-direction: row;
+}
+
+.row:after {
+    /*Make into tables*/
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.column {
+    float: left;
+    width: 30%;
+    height: auto;
+    padding: 14px 14px;
+    margin-left: 35px;
+    margin-right: 50px;
+}
+
+#bottomleft {
+    width: 100%;
+    margin-top: 15px;
+}
+
+#paragraphleft {
+    margin-bottom: 15px;
+}
+
+#bottommiddle {
+    width: 100%;
+    margin-top: 15px;
+}
+
+#paragraphmiddle {
+    margin-bottom: 15px;
+}
+
+#sidebar.column {
+    margin-top: 29px;
+    margin-bottom: 25px;
+    background-color: lightgray;
+}
+
+#sidebar p {
+    /*for sidebar paragraphs*/
+    margin: 14px 5px 25px;
+}
+
+footer {
+    list-style-type: none;
+    margin: 0;
+    padding: 24px;
+    overflow: hidden;
+    background-color: #000;
+    text-align: center;
+    font-size: 12px;
+    color: grey;
+}
+
+footer a {
+    text-align: center;
+    text-decoration: none;
+    font-size: 12px;
+    color: grey;
+}

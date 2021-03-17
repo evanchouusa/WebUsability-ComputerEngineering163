@@ -1,0 +1,84 @@
+<!--
+Evan Chou 
+COEN163 Lab 4
+-->
+
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="index.css">
+    <title>Coen163 Lab 4</title>
+</head>
+
+<body>
+    <header>
+        <img id="TopSymbolLeft" src="Assets/BeasAssets/Homepagelogo.png" alt="Top Symbol Left">
+        <img id="TopSymbolRight" src="Assets/homepageImages/cart.png" alt="Top Symbol Right">
+    </header>
+
+    <nav class="navigationbar">
+        <a class="homebutton" href="index.html">Home</a> |
+        <a href="shop.html">Shop</a> |
+        <a href="#supplies">Supplies</a> |
+        <a href="#gardeningtips/plantinginstructions">Gardening Tips & Planting Instructions</a> |
+        <a href="#about">About</a> |
+        <a href="#contactus">Contact Us</a> |
+        <a href="http://mgsantaclara.ucanr.edu/">UCMG Main Page</a>
+    </nav>
+
+    <div class="row">
+        <section class="column1">
+            <div class="columnA">
+                <img id="bottomleft" src="Assets/BeasAssets/Bea-Adams.png" alt="Photo 1">
+            </div>
+            <div class="columnB">
+                <h1 id="headermiddle">Welcome to Bea's Gardening Coop</h1>
+                <p id="paragraphmiddle">We sell high quality plants and gardening supplies! Feel free to browse around and check out some of our cool plants. We promise, you won't be disapointed!</p>
+                <img id="bottommiddle" src="Assets/homepageImages/homepageplants.jpg" alt="Photo 2">
+            </div>
+        </section>
+
+        <section class="column2">
+            <h1 id="headerright">Events</h1>
+            <iframe id="calendar" src="https://calendar.google.com/calendar/embed?height=600&amp;wkst=1&amp;bgcolor=%23ffffff&amp;ctz=America%2FLos_Angeles&amp;showTitle=0" style="border:solid 1px #777" width="800" height="600" frameborder="0" scrolling="no"></iframe>
+            <h1 id="headerright2">New Products</h1>
+            <img class="mySlides" src="Assets/shop/flowers/chrysanthemum.jpg">
+            <img class="mySlides" src="Assets/shop/flowers.jpg">
+            <button class="buttonleft" onclick="plusDivs(-1)">&#10094;</button>
+            <button class="buttonright" onclick="plusDivs(+1)">&#10095;</button>
+        </section>
+    </div>
+
+    <footer>
+        <a href="#support">Support</a> |
+        <a href="#privacy">Privacy</a>
+    </footer>
+
+    <script>
+        var slideIndex = 1;
+        showDivs(slideIndex);
+
+        function plusDivs(n) {
+            showDivs(slideIndex += n);
+        }
+
+        function showDivs(n) {
+            var i;
+            var x = document.getElementsByClassName("mySlides");
+            if (n > x.length) {
+                slideIndex = 1
+            }
+            if (n < 1) {
+                slideIndex = x.length
+            }
+            for (i = 0; i < x.length; i++) {
+                x[i].style.display = "none";
+            }
+            x[slideIndex - 1].style.display = "block";
+        }
+    </script>
+</body>
+
+</html>
